@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include "header.html" %}
+</head>
+
+<body>
+  {% include "sections/nav.html" %}
+
+  <div id="center-view" class="container">
+    <div style="display:block">
+      <div class="has-text-centered">
+        <h1 class="title is-3 has-text-grey-light">Concoctions from the lab.</h1>
+      </div>
+
+      <br><br>
+
+      <div class="level">
+        <div class="level-item has-text-centered">
+          {% include "sections/filament.html" %}
+        </div>
+
+        <div class="level-item has-text-centered">
+          {% include "sections/layerkeep.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include "sections/footer.html" %}
+
+  <script src="/js/vendor.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
